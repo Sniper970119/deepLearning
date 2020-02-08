@@ -8,4 +8,4 @@
 
 第一课第三周：[浅层神经网络](http://www.sniper97.cn/index.php/note/deep-learning/2842/)
 
-第一课第四周：[深层神经网络]()
+第一课第四周：[深层神经网络](http://www.sniper97.cn/index.php/note/deep-learning/2888/)
