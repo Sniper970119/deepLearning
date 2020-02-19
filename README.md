@@ -9,3 +9,5 @@
 第一课第三周：[浅层神经网络](http://www.sniper97.cn/index.php/note/deep-learning/2842/)
 
 第一课第四周：[深层神经网络](http://www.sniper97.cn/index.php/note/deep-learning/2888/)
+
+第二课第一周：[深度学习的实用层面](http://www.sniper97.cn/index.php/note/deep-learning/2951/)

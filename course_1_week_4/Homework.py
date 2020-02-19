@@ -162,7 +162,6 @@ def linear_activation_backward(dA, cache, activation='relu'):
     assert activation in ['sigmoid', 'relu']
     linear_cache, activation_cache = cache
     if activation is "relu":
-        # 何苦呢，辛辛苦苦保存激活前的z，然后求导的时候还要激活x
         dZ = relu_backward(dA, activation_cache)
         dA_prev, dW, db = linear_backward(dZ, linear_cache)
     elif activation is "sigmoid":
