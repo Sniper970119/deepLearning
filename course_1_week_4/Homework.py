@@ -329,15 +329,15 @@ layers_dims = (n_x, n_h, n_y)
 parameters = two_layer_model(train_x, train_set_y, layers_dims=(n_x, n_h, n_y), num_iterations=2500, print_cost=True,
                              isPlot=True)
 """
-第 2300 次迭代，成本值为： 0.05336140348560556
-第 2400 次迭代，成本值为： 0.048554785628770185
-准确度为: 1.0
-准确度为: 0.72
+cost： 0.05336140348560556
+cost： 0.048554785628770185
+train准确度为: 1.0
+test准确度为: 0.72
 
-第 2300 次迭代，成本值为： 0.14781357997051983
-第 2400 次迭代，成本值为： 0.12935258942424563
-准确度为: 1.0
-准确度为: 0.74
+cost为： 0.14781357997051983
+cost： 0.12935258942424563
+train准确度为: 1.0
+test准确度为: 0.74
 """
 
 pred_train = predict(train_x, train_y, parameters)
