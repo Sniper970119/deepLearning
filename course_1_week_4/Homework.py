@@ -187,7 +187,7 @@ def L_model_backward(AL, Y, caches):
     current_cache = caches[-1]
     grads['dA' + str(L)], grads['dW' + str(L)], grads['db' + str(L)] = linear_activation_backward(dAL, current_cache,
                                                                                                   'sigmoid')
-    for l in range(L - 1):
+    for l in reversed(range(L-1)):
         current_cache = caches[l]
         dA_prev_temp, dW_temp, db_temp = linear_activation_backward(grads['dA' + str(l + 2)], current_cache, 'relu')
         grads['dA' + str(l + 1)] = dA_prev_temp
@@ -229,10 +229,10 @@ def two_layer_model(X, Y, layers_dims, learning_rate=0.0075, num_iterations=3000
 
     grads = {}
     costs = []
-    n_x, n_h, n_y = layers_dims
+    # n_x, n_h, n_y = layers_dims
 
-    parameters = init_two_layer_parameters(n_x, n_h, n_y)
-    # parameters = init_deep_layers_parameters(layers_dims)
+    # parameters = init_two_layer_parameters(n_x, n_h, n_y)
+    parameters = init_deep_layers_parameters(layers_dims)
 
     W1 = parameters['W1']
     W2 = parameters['W2']
@@ -241,30 +241,30 @@ def two_layer_model(X, Y, layers_dims, learning_rate=0.0075, num_iterations=3000
 
     for i in range(num_iterations):
         # 前向传播
-        A1, cache1 = linear_activation_forward(X, W1, b1, 'relu')
-        A2, cache2 = linear_activation_forward(A1, W2, b2, 'sigmoid')
-        # A2, caches = L_model_forward(X, parameters)
+        # A1, cache1 = linear_activation_forward(X, W1, b1, 'relu')
+        # A2, cache2 = linear_activation_forward(A1, W2, b2, 'sigmoid')
+        AL, caches = L_model_forward(X, parameters)
 
-        cost = compute_cost(A2, Y)
+        cost = compute_cost(AL, Y)
 
         # 反向传播
-        dA2 = - (np.divide(Y, A2) - np.divide(1 - Y, 1 - A2))
-        dA1, dW2, db2 = linear_activation_backward(dA2, cache2, "sigmoid")
-        dA0, dW1, db1 = linear_activation_backward(dA1, cache1, "relu")
-        # grads = L_model_backward(A2, Y, caches)
+        # dA2 = - (np.divide(Y, A2) - np.divide(1 - Y, 1 - A2))
+        # dA1, dW2, db2 = linear_activation_backward(dA2, cache2, "sigmoid")
+        # dA0, dW1, db1 = linear_activation_backward(dA1, cache1, "relu")
+        grads = L_model_backward(AL, Y, caches)
 
         # 向后传播完成后的数据保存到grads
-        grads["dW1"] = dW1
-        grads["db1"] = db1
-        grads["dW2"] = dW2
-        grads["db2"] = db2
+        # grads["dW1"] = dW1
+        # grads["db1"] = db1
+        # grads["dW2"] = dW2
+        # grads["db2"] = db2
 
         # 更新参数
         parameters = update_parameters(parameters, grads, learning_rate)
-        W1 = parameters["W1"]
-        b1 = parameters["b1"]
-        W2 = parameters["W2"]
-        b2 = parameters["b2"]
+        # W1 = parameters["W1"]
+        # b1 = parameters["b1"]
+        # W2 = parameters["W2"]
+        # b2 = parameters["b2"]
 
         # 打印成本值，如果print_cost=False则忽略
         if i % 100 == 0:
