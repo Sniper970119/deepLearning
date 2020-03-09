@@ -20,15 +20,12 @@
 """
 
 import numpy as np
-import h5py
 import matplotlib.pyplot as plt
 import tensorflow as tf
-from tensorflow.python.framework import ops
 from course_2_week_3 import tf_utils
 import time
 
 import os
-
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 # 加载数据
@@ -143,8 +140,6 @@ def model(X_train, Y_train, X_test, Y_test, learning_rate=0.0001, num_epochs=130
     :param is_plot:
     :return:
     """
-    # ops.reset_default_graph()
-    # tf.set_random_seed(1)
     n_x, m = X_train.shape
     n_y = Y_train.shape[0]
     costs = []
