@@ -21,3 +21,5 @@
 第三课第二周：[机器学习策略（2）](http://www.sniper97.cn/index.php/note/deep-learning/3142/)
 
 第四课第一周：[卷积神经网络](http://www.sniper97.cn/index.php/note/deep-learning/3161/)
+
+第四课第一周：[深度卷积网络：实例探究](http://www.sniper97.cn/index.php/note/deep-learning/3271/)
