@@ -18,24 +18,9 @@
           ┃ ┫ ┫   ┃ ┫ ┫
           ┗━┻━┛   ┗━┻━┛
 """
-
-import numpy as np
-import tensorflow as tf
-
 import keras
-from keras.models import Model, load_model
-from keras.preprocessing import image
-from keras.utils import layer_utils
-from keras.utils.data_utils import get_file
-from keras.applications.imagenet_utils import preprocess_input
-from keras.utils.vis_utils import model_to_dot
-from keras.utils import plot_model
+from keras.models import Model
 from keras.initializers import glorot_uniform
-
-import pydot
-from IPython.display import SVG
-import scipy.misc
-from matplotlib.pyplot import imshow
 
 from course_4_week_2 import resnets_utils
 
