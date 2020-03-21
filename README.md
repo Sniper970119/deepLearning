@@ -22,4 +22,6 @@
 
 第四课第一周：[卷积神经网络](http://www.sniper97.cn/index.php/note/deep-learning/3161/)
 
-第四课第一周：[深度卷积网络：实例探究](http://www.sniper97.cn/index.php/note/deep-learning/3271/)
+第四课第二周：[深度卷积网络：实例探究](http://www.sniper97.cn/index.php/note/deep-learning/3271/)
+
+第四课第三周：[目标检测](http://www.sniper97.cn/index.php/note/deep-learning/3324/)
