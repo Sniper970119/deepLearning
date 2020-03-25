@@ -25,3 +25,5 @@
 第四课第二周：[深度卷积网络：实例探究](http://www.sniper97.cn/index.php/note/deep-learning/3271/)
 
 第四课第三周：[目标检测](http://www.sniper97.cn/index.php/note/deep-learning/3324/)
+
+第四课第四周：[人脸识别与神经风格转换](http://www.sniper97.cn/index.php/note/deep-learning/3362/)
