@@ -164,6 +164,7 @@ def predict(sess, image_file, is_show_info=True, is_plot=True):
     if is_plot:
         output_image = scipy.misc.imread(os.path.join("out", image_file))
         plt.imshow(output_image)
+        plt.show()
 
     return out_scores, out_boxes, out_classes
 
