@@ -27,3 +27,9 @@
 第四课第三周：[目标检测](http://www.sniper97.cn/index.php/note/deep-learning/3324/)
 
 第四课第四周：[人脸识别与神经风格转换](http://www.sniper97.cn/index.php/note/deep-learning/3362/)
+
+第五课第一周：笔记[序列模型](http://www.sniper97.cn/index.php/note/deep-learning/3381/)
+
+第五课第二周：笔记[自然语言处理与词嵌入](http://www.sniper97.cn/index.php/note/deep-learning/3437/)
+
+第五课第三周：笔记[序列模型和注意力机制](http://www.sniper97.cn/index.php/note/deep-learning/3459/)
